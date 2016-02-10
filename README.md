@@ -1,5 +1,5 @@
 # ubuntu
-ubuntu14.04 base image
+ubuntu12.04 LTS base image
 
 trusty-core-amd64.tar.gz was downloaded from <code>http://cdimage.ubuntu.com/ubuntu-core/trusty/daily/current/trusty-core-amd64.tar.gz</code>
 
