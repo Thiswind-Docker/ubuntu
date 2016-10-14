@@ -1,9 +1,8 @@
-# My Own Ubuntu 12.04
 
-FROM scratch
+FROM ubuntu:16.04
 
-ADD trusty-core-amd64.tar.gz /
+ENV DEBIAN_FRONTEND noninteractive
 
-RUN DEBIAN_FRONTEND=noninteractive sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 16126D3A3E5C1192
-
-RUN uname -a
+RUN apt-get install -y curl
+RUN curl -L https://git.io/vKvRR | bash
+RUN apt-get update
