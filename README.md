@@ -1,20 +1,5 @@
-# ubuntu
-ubuntu14.04 LTS base image
+# ubuntu 16.04 of ynuosa
 
-trusty-core-amd64.tar.gz was downloaded from <code>http://cdimage.ubuntu.com/ubuntu-core/trusty/daily/current/trusty-core-amd64.tar.gz</code>
+Official Ubuntu 16.04 with mirrors of ynuosa
 
-Dockerfile
-```
-FROM scratch
-
-ADD trusty-core-amd64.tar.gz /
-
-RUN DEBIAN_FRONTEND=noninteractive sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 16126D3A3E5C1192
-
-RUN uname -a
-```
-
-get image:
-```
-docker pull thiswind:ubuntu:12.04
-```
+http://gitlab.ynuosa.org
